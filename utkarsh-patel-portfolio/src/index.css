@@ -1,0 +1,208 @@
+/* importing the fonts : poippins */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600&display=swap');
+/* importing the fonts : poippins */
+
+/* Applied to all elements */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* Applied to all elements */
+
+
+/* CSS Variable to use anywhere in the page */
+:root{
+	/* To declare the variable : --<Name of the Variable> */
+	/* to use the CSS variable declared above use: <StyleName>: var(<Variable Name>); */
+
+	/* Theme colours */
+
+
+	/* Option 1 */
+	/* --color-bg: #1f1f38;
+	--color-bg-variant: #2c2c6c;
+	--color-primary: #4db5ff;
+	--color-primary-variant: rgba(77, 181, 255,0.4);
+	--color-white: #fff;
+	--color-light: rgba(255, 255, 255, 0.6); */
+	
+	/* Option 2 */
+	--color-bg: #1d1c1c;
+	--color-bg-variant: #164A41;
+	--color-primary: #F1B24A;
+	--color-primary-variant: #9DC88D;
+	--color-white: #fff;
+	--color-light: rgba(255, 255, 255, 0.6);
+	
+	/* Option 3 */
+	/* --color-bg: #ffde22;
+	--color-bg-variant: #ff8928;
+	--color-primary: #ff414e;
+	--color-primary-variant: #9DC88D;
+	--color-white: #fff;
+	--color-light: rgba(255, 255, 255, 0.6); */
+	
+	/* width of the comtainer class */
+	--container-width-lg: 75%;
+	--container-width-md: 86%;
+	--container-width-sm: 90%;
+	
+	
+	/* transition effects */
+	--trasition: all 400ms ease;
+}
+/* CSS Variable to use anywhere in the page */
+
+
+/* Scrolling behaviour */
+html{
+	scroll-behavior: smooth;
+}
+/* Scrolling behaviour */
+
+
+/* Scroll Bar */
+::-webkit-scrollbar{
+	display: none;
+}
+/* Scroll Bar */
+
+
+body{
+	font-family: "Poppins", sans-serif;
+	background: var(--color-bg);
+	color: var(--color-white);
+	line-height: 2.7;
+	background-image: url('../src/assets/bg-texture.png');
+}	
+
+
+
+
+		/* General Styles */
+
+/* For .container */
+ .container{
+	width: var(--container-width-lg);
+	margin: 0 auto;
+ }
+/* For .container */
+
+
+/* for all h1, h2, h3, h4, h5, */
+h1, h2, h3, h4, h5{
+	font-weight: 500;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+/* for all h1, h2, h3, h4, h5, */
+
+
+
+/* for the Sections */
+section{
+	margin-top: 8rem;
+}
+
+/* sections child : h2 */
+section > h2, section, h5{
+	text-align: center;
+	color: var(--color-light);
+}
+
+section > h2{
+	color: var(--color-primary);
+	margin-bottom: 3rem;
+}
+/* for the Sections */
+
+
+/* for class .text-light */
+.text-light{
+	color: var(--color-light);
+}
+/* for class .text-light */
+
+
+/* for all anchor tag */
+a{
+	color: var(--color-primary);
+	transition: var(--trasition);
+}
+
+a:hover{
+	color: var(--color-white);
+}
+/* for all anchor tag */
+
+
+/* for class .btn */
+.btn{
+	/* to fit only it's content: max-content */
+	width: max-content;
+	display: inline-block;
+	color: var(--color-primary);
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	border: 1px solid var(--color-primary);
+	transition: var(--trasition);
+}
+
+.btn:hover{
+	background: var(--color-white);
+	color: var(--color-bg);
+	border-color: transparent;
+}
+
+.btn-primary{
+	background: var(--color-primary);
+	color: var(--color-bg);
+}
+/* for class .btn */
+
+
+/* for every image */
+img{
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+/* for every image */
+
+		/* General Styles */
+
+
+
+
+
+		/* Media Queries */
+/* For MEDIUM Devices */
+@media screen and (max-width: 1024px) {
+	.container{
+		width: var(--container-width-md);
+	}
+	section{
+		margin-top: 6rem;
+	}
+}
+/* For MEDIUM Devices */
+
+/* For SMALL Devices */
+@media screen and (max-width: 600px) {
+	.container{
+		width: var(--container-width-sm);
+	}
+	section > h2{
+		margin-bottom: 2rem;
+	}
+}
+/* For SMALL Devices */
+		/* Media Queries */

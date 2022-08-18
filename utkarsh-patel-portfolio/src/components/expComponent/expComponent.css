@@ -1,0 +1,124 @@
+.experience__container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+.experience__container > div{
+	background: var(--color-bg-variant);
+	padding: 2.4rem 5rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	font-weight: bold;
+	color: var(--color-white);
+	text-align: start;
+	transition: var(--trasition);
+}
+
+.experience__container > div:hover{
+	background: transparent;
+	border-color: var(--color-primary-variant);
+	cursor: default;
+}
+
+.experience__container > div h3{
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--color-primary);
+}
+
+
+.experience__content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 2rem;
+}
+
+.experience__details{
+	display: flex;
+	gap: 1rem;
+}
+
+.experience__details-icon{
+	font-size: 1.5rem;
+	margin-top: 6px;
+	color: var(--color-primary);
+}
+
+#htmlIcon{
+	color: rgb(210, 90, 54);
+}
+
+#cssIcon{
+	color: rgb(47, 110, 180);
+
+}
+#jsIcon{
+	color: rgb(115, 166, 54);
+}
+#bootstrapIcon{
+	color: rgb(121, 30, 240)
+}
+#jqueryIcon{
+	color: rgb(45, 102, 167)
+}
+
+#reactIcon{
+	color: rgb(98, 213, 251)
+}
+
+#angularIcon{
+	color: rgb(203, 43, 57)
+}
+
+#laravelIcon{
+	color: rgb(234, 66, 47)
+}
+
+#phpIcon{
+	color: rgb(114, 129, 179)
+}
+
+#mysqlIcon{
+	color: rgb(218, 141, 68)
+}
+#mongodbIcon{
+	color: rgb(90, 151, 66)
+}
+
+
+		/* Media Queries */
+/* For MEDIUM Devices */
+@media screen and (max-width: 1024px) {
+	.experience__container{
+		grid-template-columns: 1fr;
+	}
+	
+	.experience__container > div{
+		width: 80%;
+		padding: 2rem;
+		margin: 0 auto;
+	}
+	
+	.experience__content{
+		padding: 1rem;
+	}
+}
+/* For MEDIUM Devices */
+
+		/* Media Queries */
+
+
+		/* Small Queries */
+/* For MEDIUM Devices */
+@media screen and (max-width: 600px) {
+	.experience__container{
+		gap: 1rem;
+	}
+
+	.experience__container > div{
+		width: 100%;
+		padding: 2rem 1rem;
+	}
+}
+/* For MEDIUM Devices */
